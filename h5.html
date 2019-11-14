@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" xml:lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<title>lang</title>
+</head>
+<body>
+<h1 style="padding: 30px;background-color: #999;">
+Language tags are used to indicate the language of text or other items in HTML and XML documents. Use the lang attribute to specify language tags in HTML, and the xml:lang attribute for XML
+</h1>
+<pre style="font-size:22px;">
+对搜索引擎和浏览器是有帮助的。<br />
+=zh-CN推荐，在中国地区 ，以前
+=en在外国本土
+=zh-yue 广东话
+=fr  法文
+=ja  日语
+=zh-cmn-Hans 简体中文  ，设置为这个
+<br />
+在 HTML 4.01 中，lang 属性在以下标签中无效：base, br, frame, frameset, hr, iframe, param 以及 script。
+<br />
+1，可用于 html 标签，指定当前页面采用的语言是 英语 还是 中文。
+2，可用于 body 内的标签，表明这一段内容采用的语言。
+
+例如：
+作者：李白 (唐)
+秋风清，秋月明，
+落叶聚还散，寒鸦栖复惊。
+相思相见知何日？此时此夜难为情！
+入我相思门，知我相思苦，
+长相思兮长相忆，短相思兮无穷极，
+早知如此绊人心，何如当初莫相识。
+</pre>
+<div lang="en">
+Matching different language tags is important for a number of applications. <br />
+<br />For example, the following CSS code colors all English text red in browsers that support the pseudo-attribute :lang.<br />
+:lang(en) { color: red; }
+<br />
+<br />
+<br />
+<style> 
+div:lang(en){color: red;}
+/*div[lang~=en]{color: #fc0;}*/
+</style>
+</div>
+</body>
+</html>
